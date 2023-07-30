@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>WXY - Cross Game</title>
+		<script src="js/CrossGame.js"></script>
+		<style>
+			@import url("css/CrossGame.css");
+		</style>
+	</head>
+	<body onload="init()">
+		<h1 style="text-align: center;">Cross Game</h1>
+		<h3 style="text-align: center;">by: Whania</h3>
+		<h4 style="text-align: center;">当前玩家：<span id="currentPlayer"></span></h6>
+		<table id="map" align="center">
+			
+		</table>
+		<pre>
+			游戏规则：
+				两名玩家，先手红色，后手蓝色，每个回合轮流操作。
+			操作流程：
+				轮到自己时，连接两个相邻的，没有被其他线段隔开的，与自己颜色匹配的点，并生成一个与自己颜色对应的线段。
+			游戏目标：
+				率先将整个地图一分为二。
+		</pre>
+	</body>
+</html>
