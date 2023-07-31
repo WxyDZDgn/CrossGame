@@ -11,7 +11,17 @@
 	<body onload="init()">
 		<h1 style="text-align: center;">Cross Game</h1>
 		<h3 style="text-align: center;">by: Whania</h3>
-		<h4 style="text-align: center;">当前玩家：<span id="currentPlayer"></span></h6>
+		<table align="center">
+			<tr id="setting">
+				<td><h4 style="text-align: center;">地图大小：<select id="sizeOfMap"></select></h4></td>
+				<td><button onclick="refresh()">刷新/重置</button></td>
+			</tr>
+			<tr id="display">
+				<td><h4 style="text-align: center;">当前玩家：<span id="currentPlayer"></span></h4></td>
+				<td><h4 style="text-align: center;">当前回合：<span id="currentTurn"></span></h4></td>
+			</tr>
+		</table>
+		
 		<table id="map" align="center">
 			
 		</table>
